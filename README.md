@@ -4,6 +4,9 @@ This relation helper is designed to allow the user to click a button and duplica
 
 In the example code, we have a piece of Salvage that hasMany SalvageDrivetrain.
 
+![End Result Preview](http://s28.postimg.org/bs7ec8h2l/drivetrain_example_form.png)
+
+
 ## Setup
 
 ### In your AppHelper
