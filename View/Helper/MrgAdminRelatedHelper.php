@@ -37,13 +37,13 @@
 			$i = 0;
 			if(!empty($this->data[$this->model])){
 				foreach($this->data[$this->model] as $d){
-					$id = $d['id'];
+					$id = (!empty($d['id']))?$d['id'] : '';
 					$output .= $this->_single($i, $id);
 					$i++;
 				}
+			}else{
+				$output .= $this->_single($i, 'empty');
 			}
-
-			$output .= $this->_single($i, 'empty');
 
 			return $this->Html->div($this->options['group_container'], $output);
 		}

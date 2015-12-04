@@ -14,7 +14,7 @@ class MrgAdminRelationsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator', 'Session');
+	public $components = array('Paginator', 'Session', 'RequestHandler');
 
 	/**
 	 * This will import the model needed and delete the appropriate entry
