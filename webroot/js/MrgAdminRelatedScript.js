@@ -1,8 +1,7 @@
 	/* ********* REPEATER ************* */
 	/* Add/Delete Associated model data */
 
-	if (typeof jQuery != 'undefined' && typeof jQuery.widget != 'undefined') {
-		(function ($){
+		define(['jquery'], function ($){
 			$.widget("MrgAdminRelated.repeater", {
 				options : {
 					add_button:'#repeater_add', // The id for the add button at the bottom of the group container
@@ -80,9 +79,4 @@
 					}
 				}
 			})
-		})(jQuery);
-	}else{
-		if (typeof console == "object") {
-			console.log('You may be missing jquery or jquery widget');
-		}
-	}
+		});
