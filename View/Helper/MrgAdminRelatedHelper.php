@@ -7,9 +7,8 @@
 		public function __construct(View $view, $settings = array()) {
 			parent::__construct($view, $settings);
 			// Load a custom select box
-			echo
-				//$this->Html->css('MrgCustomSelect.jquery.plugins.selectBoxIt', array('inline'=>false)).
-				$this->Html->script('MrgAdminRelated.MrgAdminRelatedScript.js', array('inline'=>false));
+				// $this->Html->css('MrgCustomSelect.jquery.plugins.selectBoxIt', array('inline'=>false)).
+				// $this->Html->script('MrgAdminRelated.MrgAdminRelatedScript.js', array('inline'=>false));
 		}
 
 		/**
